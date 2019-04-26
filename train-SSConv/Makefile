@@ -1,14 +1,14 @@
 .PHONY: build
 .PHONY: clean
 
-PLOTTER = true
+PLOTTER = false
 SNAPSHOT = false
 
 LIBSUSR1 = -L/usr/local/lib -lcuSNN -lcnpy -lz -lGL -lGLU -lX11 -lglut
 LIBSUSR2 = -L/usr/local/lib -lcuSNN -lz -lGL -lGLU -lX11 -lglut
 LIBSUSR3 = -L/usr/local/lib -lcuSNN -lcnpy -lz
-LIBSUSR4 =
-LIBSCUSTOM =
+LIBSUSR4 = -UOPENGL -L/usr/local/lib -lcuSNN -lz
+LIBSCUSTOM = -L/data1/myq/cuSNN/build/
 
 ifeq ($(PLOTTER),true)
     ifeq ($(SNAPSHOT),true)
