@@ -167,6 +167,11 @@ int main(int argc, char** argv){
             std::cout << "\nRun " << r << ": Weights stored at " << std::string("weights/") + weights_out_aux << "\n";
         }
 
+        printf("\n");
+        for (int nk = 0; nk < 16; nk++) {
+            std::cout << "Kernel " << nk << ": " << SNN->h_layers[0]->h_kernels[nk]->stdp_paredes_objective_avg << "\n";
+        }
+
         // print progress
         auto t1 = Time::now();
         fsec fs = t1 - t0;
