@@ -5,6 +5,7 @@
 /train-Dense/build/*
 /test-Dense/build/*
 /record-spikes/build/*
+/train-SSConv_mnist/build/*
 
 !/train-SSConv/build/.gitignore
 !/test-SSConv/build/.gitignore
@@ -13,6 +14,7 @@
 !/train-Dense/build/.gitignore
 !/test-Dense/build/.gitignore
 !/record-spikes/build/.gitignore
+!/train-SSConv_mnist/build/.gitignore
 
 /train-SSConv/weights/
 /test-SSConv/weights/
@@ -21,6 +23,7 @@
 /train-Dense/weights/
 /test-Dense/weights/
 /record-spikes/weights/
+/train-SSConv_mnist/weights/
 
 /train-SSConv/.idea/
 /test-SSConv/.idea/
@@ -29,6 +32,7 @@
 /train-Dense/.idea/
 /test-Dense/.idea/
 /record-spikes/.idea/
+/train-SSConv_mnist/.idea/
 
 /train-SSConv/cmake-build-debug/
 /test-SSConv/cmake-build-debug/
@@ -37,6 +41,7 @@
 /train-Dense/cmake-build-debug/
 /test-Dense/cmake-build-debug/
 /record-spikes/cmake-build-debug/
+/train-SSConv_mnist/cmake-build-debug/
 
 /train-SSConv/obj/*
 /test-SSConv/obj/*
@@ -45,6 +50,7 @@
 /train-Dense/obj/*
 /test-Dense/obj/*
 /record-spikes/obj/*
+/train-SSConv_mnist/obj/*
 
 !/train-SSConv/obj/.gitignore
 !/test-SSConv/obj/.gitignore
@@ -53,6 +59,7 @@
 !/train-Dense/obj/.gitignore
 !/test-Dense/obj/.gitignore
 !/record-spikes/obj/.gitignore
+!/train-SSConv_mnist/obj/.gitignore
 
 
 /data/mnist_event
@@ -67,3 +74,4 @@
 .project
 *.xml
 *.iml
+.gitignore~
