@@ -1,7 +1,7 @@
 .PHONY: build
 .PHONY: clean
 
-PLOTTER = false
+PLOTTER = true
 SNAPSHOT = false
 
 LIBSUSR1 = -L/usr/local/lib -lcuSNN -lcnpy -lz -lGL -lGLU -lX11 -lglut
