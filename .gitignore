@@ -75,3 +75,4 @@
 *.xml
 *.iml
 .gitignore~
+tags
