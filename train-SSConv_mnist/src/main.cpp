@@ -31,8 +31,8 @@ int main(int argc, char** argv){
     /////////////////////////////////////////////////////////////////////////////////////////////////////
 
   // dataset
-    const std::string dataset_dir = "../data/roadmap";
-    const int inp_size[] = {2, 264, 320}; // (channels, height, width)
+    const std::string dataset_dir = "../data/mnist_event";
+    const int inp_size[] = {2, 128, 128}; // (channels, height, width)
     const float inp_scale[] = {2.f, 2.f}; // (height, width)
 
     // simulation settings
@@ -49,7 +49,7 @@ int main(int argc, char** argv){
     const bool data_augmentation = true;
     const int store_model_it_gap = -1;
     std::vector<int> kernels_display_idx = {0, 128};
-    std::string weights_dir = "../weights/roadmap";
+    std::string weights_dir = "../weights/mnist_event";
     std::string snapshots_dir = "../cuSNN_snapshots";
 
     // neuron and synapse models
