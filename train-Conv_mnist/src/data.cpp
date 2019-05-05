@@ -150,6 +150,9 @@ void feed_network(const std::string& dataset_dir, std::vector<std::string>& data
                     // feed the network
                     SNN->feed(break_feed);
                     if (break_feed) break;
+                    if (openGL && !break_sim_data) {
+                        SNN->copy_to_host();
+                    }
                     #ifdef OPENGL
                     if (openGL && !break_sim_data) {
                         SNN->copy_to_host();

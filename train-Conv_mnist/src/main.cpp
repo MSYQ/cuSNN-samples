@@ -171,11 +171,19 @@ int main(int argc, char** argv){
             weights_to_csv(weights_out_aux, SNN);
             std::cout << "\nRun " << r << ": Weights stored at " << std::string("weights/") + weights_out_aux << "\n";
         }
-//
-//        printf("\n");
-//        for (int nk = 0; nk < 16; nk++) {
-//            std::cout << "Kernel " << nk << ": " << SNN->h_layers[0]->h_kernels[nk]->stdp_paredes_objective_avg << "\n";
-//        }
+
+
+	// Printf the cost function value of the first two layers' kernels.
+        printf("\n");
+        printf("Layer 0: \n");
+        for (int nk = 0; nk < SNN->h_layers[0]->cnt_kernels; nk++) {
+            std::cout << "Kernel " << nk << ": " << SNN->h_layers[0]->h_kernels[nk]->stdp_paredes_objective_avg << "\n";
+        }
+
+        printf("Layer 2: \n");
+        for (int nk = 0; nk < SNN->h_layers[2]->cnt_kernels; nk++) {
+            std::cout << "Kernel " << nk << ": " << SNN->h_layers[2]->h_kernels[nk]->stdp_paredes_objective_avg << "\n";
+        }
 
         // print progress
         auto t1 = Time::now();
